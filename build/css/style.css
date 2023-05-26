@@ -3158,6 +3158,30 @@ button,
   padding-bottom: 20px;
 }
 
+.trainers__link:focus .trainers__hover {
+  height: 80%;
+  display: block;
+}
+
+.trainers__link:focus .trainers__text {
+  background: rgba(16, 38, 84, 0.89);
+  height: 100%;
+  padding-top: 62px;
+  padding-bottom: 20px;
+}
+
+.trainers__link:active .trainers__hover {
+  height: 80%;
+  display: block;
+}
+
+.trainers__link:active .trainers__text {
+  background: rgba(16, 38, 84, 0.89);
+  height: 100%;
+  padding-top: 62px;
+  padding-bottom: 20px;
+}
+
 .trainers__text h5 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -3689,6 +3713,11 @@ button,
     height: 73px;
   }
 
+  .gym__video-iframe {
+    width: 266px;
+    height: 167px;
+  }
+
   .gym__preview img {
     width: 266px;
   }
@@ -4002,6 +4031,22 @@ button,
     margin-left: -19px;
   }
 
+  .trainers__link:focus .trainers__text h5 {
+    margin-left: -15px;
+  }
+
+  .trainers__link:focus .trainers__hover span {
+    margin-left: -19px;
+  }
+
+  .trainers__link:active .trainers__text h5 {
+    margin-left: -15px;
+  }
+
+  .trainers__link:active .trainers__hover span {
+    margin-left: -19px;
+  }
+
   .trainers__text {
     padding: 21px;
     padding-left: 31px;
@@ -4304,8 +4349,16 @@ button,
     position: static;
   }
 
+  .gym__video-iframe {
+    min-width: 100%;
+    min-height: 100%;
+  }
+
   .gym__preview img {
     width: 100%;
+    max-height: 167px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .hero__wrapper {
@@ -4791,6 +4844,34 @@ button,
   }
 
   .trainers__link:hover .trainers__hover span {
+    margin-left: 0;
+  }
+
+  .trainers__link:focus .trainers__text {
+    padding-top: 41px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .trainers__link:focus .trainers__text h5 {
+    margin-left: 0;
+  }
+
+  .trainers__link:focus .trainers__hover span {
+    margin-left: 0;
+  }
+
+  .trainers__link:active .trainers__text {
+    padding-top: 41px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .trainers__link:active .trainers__text h5 {
+    margin-left: 0;
+  }
+
+  .trainers__link:active .trainers__hover span {
     margin-left: 0;
   }
 
