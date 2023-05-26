@@ -1,0 +1,386 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__wrapper {
+  flex: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $vp-1199) {
+    display: block;
+  }
+}
+
+.contacts__form {
+  background-color: $sapphire;
+  padding: 57px 0;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: end;
+  padding-right: 170px;
+
+  @media (max-width: $vp-1199) {
+    justify-content: center;
+    padding: 63px 40px;
+    padding-right: 70px;
+    padding-bottom: 68px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 15px;
+    padding-top: 64px;
+    padding-bottom: 68px;
+  }
+}
+
+.contacts__form h2 {
+  font-family: $alumni;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-family: $alumni;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 33px;
+  }
+}
+
+.contacts__form input {
+  background-color: transparent;
+  margin-bottom: 27px;
+  border: none;
+  color: $color-default-white;
+  border-bottom: 1px solid $light-gray;
+  min-height: 30px;
+  max-width: 190px;
+
+  @media (max-width: $vp-1199) {
+    min-width: 100%;
+    max-width: 206px;
+  }
+}
+
+.contacts__form input:hover {
+  opacity: 0.8;
+}
+
+.contacts__form input:focus {
+  opacity: 0.8;
+}
+
+.contacts__form input:active {
+  opacity: 0.6;
+}
+
+.contacts__form input::placeholder {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+}
+
+.contacts__button {
+  font-family: $roboto;
+  border: 3px solid $color-default-white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  user-select: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 19px;
+  padding-bottom: 15px;
+  color: $color-default-white;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+
+  @media (max-width: $vp-1199) {
+    min-width: 472px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 100%;
+  }
+}
+
+.contacts__button:hover {
+  opacity: 0.8;
+}
+
+.contacts__button:focus {
+  opacity: 0.8;
+}
+
+.contacts__button:active {
+  opacity: 0.6;
+}
+
+.contacts__form-content {
+  @media (max-width: $vp-767) {
+    min-width: 100%;
+  }
+}
+
+.contacts__form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 410px;
+
+  @media (max-width: $vp-1199) {
+    max-width: 472px;
+    gap: 60px;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+    gap: 3px;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+}
+
+.contacts__contacts {
+  padding: 56px 0;
+  padding-bottom: 63px;
+  border-top: 1px solid $light-gray;
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: $vp-1199) {
+    padding: 0;
+    border: none;
+    justify-content: center;
+  }
+}
+
+.contacts__contacts h2 {
+  font-family: $alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $sapphire;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-family: $alumni;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 33px;
+  }
+}
+
+.contacts__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 120px;
+  row-gap: 16px;
+  margin-left: 4px;
+  position: relative;
+
+  @media (max-width: $vp-1199) {
+    column-gap: 96px;
+    margin-left: 0;
+    row-gap: 19px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__list li:nth-child(n + 1) {
+  @media (max-width: $vp-767) {
+    order: 1;
+  }
+}
+
+.contacts__list li:nth-child(n + 2) {
+  @media (max-width: $vp-767) {
+    order: 3;
+  }
+}
+
+.contacts__list li:nth-child(n + 3) {
+  @media (max-width: $vp-767) {
+    order: 2;
+  }
+}
+
+.contacts__list li:nth-child(n + 4) {
+  @media (max-width: $vp-767) {
+    order: 4;
+  }
+}
+
+.contacts__list::before {
+  content: "";
+  height: 87%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  position: absolute;
+  background-color: $light-gray;
+  left: 50%;
+
+  @media (max-width: $vp-767) {
+    content: none;
+  }
+}
+
+.contacts__item span {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: $sapphire;
+  display: block;
+  margin-bottom: 5px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 20px;
+    margin-bottom: 6px;
+    line-height: 150%;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+.contacts__contacts-content {
+  padding-left: 120px;
+  padding-right: 10px;
+
+  @media (max-width: $vp-1199) {
+    padding: 62px 45px;
+    padding-left: 76px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 15px;
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 62px;
+  }
+}
+
+.contacts__item p {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $sapphire;
+  margin: 0;
+
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+}
+
+.contacts__item a {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $sapphire;
+  display: block;
+  width: fit-content;
+
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+}
+
+.contacts__item address {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $sapphire;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+
+  @media (max-width: $vp-767) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+}
+
+.contacts__item address:hover {
+  opacity: 0.8;
+}
+
+.contacts__item address:focus {
+  opacity: 0.8;
+}
+
+.contacts__item address:active {
+  opacity: 0.6;
+}
+
+.contacts__item a:hover {
+  opacity: 0.8;
+}
+
+.contacts__item a:focus {
+  opacity: 0.8;
+}
+
+.contacts__item a:active {
+  opacity: 0.6;
+}
