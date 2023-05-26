@@ -3258,7 +3258,7 @@ button,
   border: none;
   color: #afafaf;
   padding: 0;
-  left: 33px;
+  left: 4px;
 }
 
 .trainers__next {
@@ -3266,7 +3266,7 @@ button,
   border: none;
   color: #afafaf;
   padding: 0;
-  right: 33px;
+  right: 4px;
 }
 
 .trainers__next:hover {
@@ -3289,7 +3289,7 @@ button,
   opacity: 0.6;
 }
 
-.trainers__::after {
+.trainers__prev::after {
   position: absolute;
   content: "prev";
   font-size: 32px;
@@ -4007,7 +4007,6 @@ button,
   .trainers__item {
     width: 100%;
     min-height: 100%;
-    margin-top: 0;
   }
 
   .trainers__arrows {
@@ -4050,6 +4049,14 @@ button,
   .trainers__text {
     padding: 21px;
     padding-left: 31px;
+  }
+
+  .trainers__prev {
+    left: 33px;
+  }
+
+  .trainers__next {
+    right: 33px;
   }
 
   .trainers__item--mary {
@@ -4883,7 +4890,7 @@ button,
     right: 0;
   }
 
-  .trainers__::after {
+  .trainers__prev::after {
     font-size: 19px;
   }
 
