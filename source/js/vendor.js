@@ -9,8 +9,8 @@ const initStaffSwiper = () => {
     loop: true,
 
     navigation: {
-      nextEl: '.slider-next',
-      prevEl: '.slider-prev',
+      nextEl: '.trainers__next',
+      prevEl: '.trainers__prev',
     },
     maxBackfaceHiddenSlides: 0,
     breakpoints: {
@@ -46,8 +46,8 @@ const initFeedbackSwiper = () => {
     loop: false,
 
     navigation: {
-      nextEl: '.reviews-next',
-      prevEl: '.reviews-prev ',
+      nextEl: '.reviews__next',
+      prevEl: '.reviews__prev ',
     },
 
     slidesPerView: 1,

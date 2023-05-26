@@ -89,7 +89,6 @@
   @media (max-width: $vp-1199) {
     width: 100%;
     min-height: 100%;
-    margin-top: 0;
   }
 }
 
@@ -339,7 +338,11 @@
   border: none;
   color: $arrows;
   padding: 0;
-  left: 33px;
+  left: 4px;
+
+  @media (max-width: $vp-1199) {
+    left: 33px;
+  }
 
   @media (max-width: $vp-767) {
     left: 0;
@@ -351,7 +354,11 @@
   border: none;
   color: $arrows;
   padding: 0;
-  right: 33px;
+  right: 4px;
+
+  @media (max-width: $vp-1199) {
+    right: 33px;
+  }
 
   @media (max-width: $vp-767) {
     right: 0;
@@ -378,7 +385,7 @@
   opacity: 0.6;
 }
 
-.trainers__::after {
+.trainers__prev::after {
   position: absolute;
   content: "prev";
   font-size: 32px;
