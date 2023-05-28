@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-
+import './modules/tabs';
+import './modules/init-swiper';
 
 // ---------------------------------
 function playVideo() {

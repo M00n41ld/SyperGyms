@@ -12,12 +12,12 @@ tabLists[0].classList.add('active');
 tabButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
     // Деактивируем все кнопки табов
-    tabButtons.forEach(btn => {
+    tabButtons.forEach((btn) => {
       btn.classList.remove('membership__button--active');
     });
 
     // Скрываем все списки табов
-    tabLists.forEach(list => {
+    tabLists.forEach((list) => {
       list.classList.remove('active');
     });
 
