@@ -3784,7 +3784,8 @@ button,
 
   .footer__wrapper {
     padding-top: 38px;
-    padding-bottom: 44px;
+    padding-bottom: 37px;
+    padding-right: 39px;
   }
 
   .footer__logo img {
@@ -3792,9 +3793,14 @@ button,
     height: 18px;
   }
 
+  .footer__socials {
+    padding-top: 7px;
+  }
+
   .footer__list {
-    margin-left: 16px;
+    margin-left: 10px;
     gap: 30px;
+    margin-top: -5px;
   }
 
   .footer__list li {
@@ -4461,6 +4467,7 @@ button,
 
   .footer__socials {
     grid-column: 1/-1;
+    padding-top: 0;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -4482,6 +4489,7 @@ button,
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+    margin-top: 0;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
