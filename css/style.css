@@ -1783,18 +1783,6 @@ button,
   padding: 0;
 }
 
-.contacts__item address:hover {
-  opacity: 0.8;
-}
-
-.contacts__item address:focus {
-  opacity: 0.8;
-}
-
-.contacts__item address:active {
-  opacity: 0.6;
-}
-
 .contacts__item a:hover {
   opacity: 0.8;
 }
@@ -3197,18 +3185,18 @@ button,
   cursor: default;
 }
 
-.trainers__link:hover .trainers__hover {
+.trainers__item:hover .trainers__hover {
   height: 80%;
   display: block;
 }
 
-.trainers__link:hover .trainers__text {
+.trainers__item:hover .trainers__text {
   background: rgba(16, 38, 84, 0.89);
   height: 100%;
   padding-top: 50px;
 }
 
-.trainers__link:focus .trainers__hover {
+.trainers__item:focus .trainers__hover {
   height: 80%;
   display: block;
 }
@@ -3216,20 +3204,18 @@ button,
 .trainers__link:focus .trainers__text {
   background: rgba(16, 38, 84, 0.89);
   height: 100%;
-  padding-top: 62px;
-  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
-.trainers__link:active .trainers__hover {
+.trainers__item:active .trainers__hover {
   height: 80%;
   display: block;
 }
 
-.trainers__link:active .trainers__text {
+.trainers__item:active .trainers__text {
   background: rgba(16, 38, 84, 0.89);
   height: 100%;
-  padding-top: 62px;
-  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 .trainers__text h5 {
@@ -4079,32 +4065,42 @@ button,
     width: 100%;
   }
 
-  .trainers__link:hover .trainers__text {
+  .trainers__item:hover .trainers__text {
     padding-top: 62px;
     padding-bottom: 20px;
   }
 
-  .trainers__link:hover .trainers__text h5 {
+  .trainers__item:hover .trainers__text h5 {
     margin-left: -15px;
   }
 
-  .trainers__link:hover .trainers__hover span {
+  .trainers__item:hover .trainers__hover span {
     margin-left: -19px;
   }
 
-  .trainers__link:focus .trainers__text h5 {
+  .trainers__link:focus .trainers__text {
+    padding-top: 62px;
+    padding-bottom: 20px;
+  }
+
+  .trainers__item:focus .trainers__text h5 {
     margin-left: -15px;
   }
 
-  .trainers__link:focus .trainers__hover span {
+  .trainers__item:focus .trainers__hover span {
     margin-left: -19px;
   }
 
-  .trainers__link:active .trainers__text h5 {
+  .trainers__item:active .trainers__text {
+    padding-top: 62px;
+    padding-bottom: 20px;
+  }
+
+  .trainers__item:active .trainers__text h5 {
     margin-left: -15px;
   }
 
-  .trainers__link:active .trainers__hover span {
+  .trainers__item:active .trainers__hover span {
     margin-left: -19px;
   }
 
@@ -4926,17 +4922,17 @@ button,
     min-height: 100%;
   }
 
-  .trainers__link:hover .trainers__text {
+  .trainers__item:hover .trainers__text {
     padding-top: 41px;
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .trainers__link:hover .trainers__text h5 {
+  .trainers__item:hover .trainers__text h5 {
     margin-left: 0;
   }
 
-  .trainers__link:hover .trainers__hover span {
+  .trainers__item:hover .trainers__hover span {
     margin-left: 0;
   }
 
@@ -4946,25 +4942,25 @@ button,
     padding-right: 10px;
   }
 
-  .trainers__link:focus .trainers__text h5 {
+  .trainers__item:focus .trainers__text h5 {
     margin-left: 0;
   }
 
-  .trainers__link:focus .trainers__hover span {
+  .trainers__item:focus .trainers__hover span {
     margin-left: 0;
   }
 
-  .trainers__link:active .trainers__text {
+  .trainers__item:active .trainers__text {
     padding-top: 41px;
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .trainers__link:active .trainers__text h5 {
+  .trainers__item:active .trainers__text h5 {
     margin-left: 0;
   }
 
-  .trainers__link:active .trainers__hover span {
+  .trainers__item:active .trainers__hover span {
     margin-left: 0;
   }
 
