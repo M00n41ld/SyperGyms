@@ -10,8 +10,8 @@ function playVideo() {
   let button = document.querySelector('.gym__button');
   iframe.style.display = 'block';
   iframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&mute=1';
-  preview.style.display = 'none';
-  button.style.display = 'none';
+  preview.style.zIndex = '1';
+  button.style.zIndex = '1';
 }
 
 window.addEventListener('DOMContentLoaded', () => {

@@ -63,6 +63,9 @@
   letter-spacing: 0.03em;
   cursor: pointer;
   user-select: none;
+  max-width: 195px;
+  display: grid;
+  grid-template-columns: 1fr;
 
   @media (max-width: $vp-1199) {
     font-size: 24px;

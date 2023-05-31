@@ -16,10 +16,10 @@
 
 .contacts__form {
   background-color: $sapphire;
-  padding: 57px 0;
+  padding-top: 57px;
   padding-bottom: 50px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 170px;
 
   @media (max-width: $vp-1199) {
@@ -111,6 +111,7 @@
   padding-bottom: 15px;
   color: $color-default-white;
   width: 100%;
+  max-width: 410px;
   background-color: transparent;
   text-align: center;
 
@@ -296,7 +297,7 @@
     padding: 70px 15px;
     width: 100%;
     padding-top: 64px;
-    padding-bottom: 62px;
+    padding-bottom: 61px;
   }
 }
 
@@ -354,23 +355,10 @@
     line-height: 152.34%;
   }
 
-
   @media (max-width: $vp-767) {
     font-size: 18px;
     line-height: 152.34%;
   }
-}
-
-.contacts__item address:hover {
-  opacity: 0.8;
-}
-
-.contacts__item address:focus {
-  opacity: 0.8;
-}
-
-.contacts__item address:active {
-  opacity: 0.6;
 }
 
 .contacts__item a:hover {

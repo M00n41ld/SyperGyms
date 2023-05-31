@@ -42,7 +42,7 @@
   color: $sapphire;
   text-align: center;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (max-width: $vp-1199) {
     font-size: 42px;
@@ -53,7 +53,7 @@
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 38px;
-    margin-right: -3px;
+    margin-right: -4px;
     margin-bottom: 42px;
   }
 }
@@ -74,6 +74,8 @@
 .sale__img img {
   user-select: none;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 
   @media (max-width: $vp-1199) {
     min-width: 399px;
@@ -130,6 +132,30 @@
   }
 }
 
+.sale__text a:hover {
+  opacity: 0.8;
+}
+
+.sale__text a:focus {
+  opacity: 0.7;
+}
+
+.sale__text a:active {
+  opacity: 0.6;
+}
+
+.sale__item a:hover {
+  opacity: 0.8;
+}
+
+.sale__item a:focus {
+  opacity: 0.7;
+}
+
+.sale__item a:active {
+  opacity: 0.6;
+}
+
 .sale__text p {
   color: $color-default-white;
   font-weight: 400;
@@ -137,6 +163,7 @@
   font-family: $roboto;
   line-height: 140%;
   margin: 0;
+  margin-bottom: 10px;
 
   @media (max-width: $vp-767) {
     text-align: center;
@@ -145,6 +172,7 @@
 }
 
 .sale__promo {
+  height: min-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -183,6 +211,7 @@
   flex-direction: column;
   border-image: linear-gradient(to left top, #00359f, #d10a42);
   border-image-slice: 1;
+  min-height: 211px;
 
   @media (max-width: $vp-767) {
     align-items: center;
@@ -208,6 +237,7 @@
   font-size: 16px;
   line-height: 140%;
   color: $text-blue;
+  margin-bottom: 10px;
 
   @media (max-width: $vp-1199) {
     margin-bottom: 50px;

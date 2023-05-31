@@ -7,13 +7,13 @@
   padding-left: 45px;
   padding-right: 45px;
   max-width: 1250px;
-  padding-top: 121px;
+  padding-top: 120px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto auto;
 
   @media (max-width: $vp-1199) {
-    padding-top: 100px;
+    padding-top: 99px;
   }
 
   @media (max-width: $vp-767) {
@@ -126,6 +126,7 @@
   display: flex;
   margin-left: -3px;
   justify-content: center;
+  text-align: center;
 
   @media (max-width: $vp-1199) {
     min-width: 202px;
@@ -143,6 +144,18 @@
   @media (max-width: $vp-767) {
     margin-left: -1px;
   }
+}
+
+.games__button:hover {
+  opacity: 0.8;
+}
+
+.games__button:focus {
+  opacity: 0.7;
+}
+
+.games__button:active {
+  opacity: 0.6;
 }
 
 .games__announcement {
@@ -172,7 +185,7 @@
   font-size: 40px;
   line-height: 120%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   border-top: 1px solid $color-default-white;
   width: min-content;
@@ -228,6 +241,7 @@
 
 .games__img {
   user-select: none;
+  background-color: $text-blue;
 
   @media (max-width: $vp-767) {
     width: 100%;
@@ -236,6 +250,7 @@
 
 .games__img img {
   height: 100%;
+  color: $color-default-white;
 
   @media (max-width: $vp-1199) {
     max-width: 386px;

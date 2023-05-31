@@ -74,8 +74,8 @@
   grid-column: 2/3;
   margin-right: 64px;
   display: flex;
-  justify-content: end;
-  align-items: start;
+  justify-content: flex-end;
+  align-items: flex-start;
 
   @media (max-width: $vp-1199) {
     margin-right: 30px;
