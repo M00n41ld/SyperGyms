@@ -3266,15 +3266,18 @@ button,
   max-height: 190px;
 }
 
+.trainers__scroll::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
 .trainers__item:hover .trainers__text {
   background: rgba(16, 38, 84, 0.89);
   height: 100%;
   padding-top: 52px;
-}
-
-.trainers__item:hover .trainers__text h5 {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 .trainers__item:focus .trainers__hover {
