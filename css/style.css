@@ -1564,7 +1564,7 @@ button,
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 170px;
 }
 
@@ -2307,10 +2307,10 @@ button,
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: end;
+  justify-content: flex-end;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .hero__button:hover {
@@ -2697,7 +2697,7 @@ button,
   display: flex;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -3005,6 +3005,30 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.sale__text a:hover {
+  opacity: 0.8;
+}
+
+.sale__text a:focus {
+  opacity: 0.7;
+}
+
+.sale__text a:active {
+  opacity: 0.6;
+}
+
+.sale__item a:hover {
+  opacity: 0.8;
+}
+
+.sale__item a:focus {
+  opacity: 0.7;
+}
+
+.sale__item a:active {
+  opacity: 0.6;
 }
 
 .sale__text p {
