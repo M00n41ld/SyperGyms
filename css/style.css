@@ -2681,9 +2681,6 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.games__button {
   text-align: center;
 }
 
@@ -3473,10 +3470,6 @@ button,
 
 .features__numbers--second {
   margin-left: -17px;
-}
-
-.features__item:nth-child(n+4) {
-  padding-top: 60px;
 }
 
 .features__text {
